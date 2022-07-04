@@ -1,0 +1,32 @@
+.logo-link {
+  font-family: "Raleway";
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__title {
+    color: var(--brand-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
+  &--color {
+    color: var(--brand-color);
+    &:hover,
+    &:focus {
+      color: var(--white);
+    }
+
+    &--color {
+      color: var(--white);
+    }
+  }
+}

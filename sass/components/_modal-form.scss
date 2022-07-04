@@ -1,0 +1,115 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  position: relative;
+
+  &__title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+  &__label:focus-within svg {
+    fill: var(--brand-color);
+  }
+  &__label {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  &__input {
+    height: 40px;
+    width: 448px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 42px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      border: 1px solid #2196f3;
+      fill: var(--brand-color);
+      outline: none;
+    }
+  }
+}
+.name {
+  position: absolute;
+  top: 107px;
+  left: 15px;
+}
+.telefon {
+  position: absolute;
+  top: 174.26px;
+  left: 14.27px;
+}
+.modal-email {
+  position: absolute;
+  top: 243px;
+  left: 13.5px;
+}
+.input1:checked + .label2::before {
+  background-color: var(--brand-color);
+  background-image: url(../images/vector.svg);
+  background-position: 50% 50%;
+  border: none;
+  background-repeat: no-repeat;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.label2 {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  color: #757575;
+  margin-top: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-right: 8px;
+    transition-property: background-color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.textarea {
+  margin-top: 4px;
+  font-size: 12px;
+  height: 120px;
+  resize: none;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    border: 1px solid #2196f3;
+    outline: none;
+  }
+}

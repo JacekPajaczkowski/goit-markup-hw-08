@@ -1,0 +1,25 @@
+.clients {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+
+  &__client-icon {
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    fill: #afb1b8;
+    transition-property: fill, border, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: #2196f3;
+      border: 1px solid #2196f3;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+  body {
+    color: #757575;
+    background: var(--white);
+    font-family: "Roboto", "raleway", sans-serif;
+    font-weight: 400;
+    margin: 0;
+  }
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+    .img {
+    display: block;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+        
