@@ -1,4 +1,4 @@
-# goit-markup-hw-07
-Homework7
-Zadanie Domowe Techskills nr 7
-porządki
+# goit-markup-hw-08
+Homework8
+Zadanie Domowe Techskills nr 8
+Zakończenie
