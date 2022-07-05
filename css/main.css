@@ -1001,12 +1001,15 @@ p {
 
 .hamburger {
   position: absolute;
+  right: 23px;
   top: 30px;
-  left: 400px;
 }
 
 .menu {
   fill: black;
+}
+.menu:hover, .menu:focus {
+  fill: var(--brand-color);
 }
 
 @media screen and (min-width: 480px) {
