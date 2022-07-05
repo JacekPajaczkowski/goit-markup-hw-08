@@ -1,41 +1,84 @@
 .section1 {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      rgba(98, 100, 110, 0.4),
+      rgba(98, 100, 110, 0.4)
+    ),
+    url("../images/Background480x400.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and(min-width: 480px) and(max-width: 768px) {
+  .section1 {
+    height: 400px;
     background-image: linear-gradient(
         rgba(98, 100, 110, 0.4),
         rgba(98, 100, 110, 0.4)
       ),
-      url("../images/Background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+      url("../images/Background768x400.jpg");
   }
-  .headline1 {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-  
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  
-    color: var(--white);
-    margin: 0;
+}
+@media screen and(min-width: 768px) {
+  .section1 {
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(98, 100, 110, 0.4),
+        rgba(98, 100, 110, 0.4)
+      ),
+      url("../images/Background1600x600.jpg");
   }
-  .headline2 {
-    color: var(--black);
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    margin-bottom: 50px;
+}
+.headline1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white);
+  margin: 0;
+}
+.headline2 {
+  color: var(--black);
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+}
+.section > .section1 {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and(min-width: 480px) and(max-width: 768px) {
+  .section > .section1 {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
   }
+}
+@media screen and(min-width: 768px) and(max-width: 1200px) {
   .section > .section1 {
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
   }
-    
+}
+@media screen and(min-width: 1200px) {
+  .section > .section1 {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}

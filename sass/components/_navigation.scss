@@ -1,53 +1,58 @@
 .navigation {
-  display: flex;
-  margin-left: 93px;
-
-  &__list {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    list-style: none;
-    color: var(--shadow2);
-    text-decoration: none;
+  display: none;
+}
+@media screen and(min-width: 768px) {
+  .navigation {
     display: flex;
-    justify-content: space-between;
-    padding-left: 0;
-    width: 254px;
-    transition: color;
-  }
-  &__link {
-    text-decoration: none;
-    color: var(--shadow2);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover::after,
-    &:focus::after {
-      content: "";
-      display: block;
-      position: relative;
-      border-top: 4px solid var(--brand-color);
-      border-radius: 2px;
-      top: 31px;
-    }
-    &:hover,
-    &:focus {
-      color: var(--brand-color);
-      text-decoration: none;
-    }
+    margin-left: 93px;
 
-    &--active {
+    &__list {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      list-style: none;
+      color: var(--shadow2);
       text-decoration: none;
-      color: var(--brand-color);
-
-      &::after {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 0;
+      width: 254px;
+      transition: color;
+    }
+    &__link {
+      text-decoration: none;
+      color: var(--shadow2);
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover::after,
+      &:focus::after {
         content: "";
         display: block;
         position: relative;
         border-top: 4px solid var(--brand-color);
         border-radius: 2px;
         top: 31px;
+      }
+      &:hover,
+      &:focus {
+        color: var(--brand-color);
+        text-decoration: none;
+      }
+
+      &--active {
+        text-decoration: none;
+        color: var(--brand-color);
+
+        &::after {
+          content: "";
+          display: block;
+          position: relative;
+          border-top: 4px solid var(--brand-color);
+          border-radius: 2px;
+          top: 31px;
+        }
       }
     }
   }

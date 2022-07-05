@@ -1,53 +1,58 @@
 .adres-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  line-height: 1.17;
-  padding-left: 0%;
-  margin-left: 345px;
-  width: 321px;
-  list-style: none;
-
-  &__mail {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: #757575;
+  display: none;
+}
+@media screen and(min-width: 768px) {
+  .adres-list {
     display: flex;
-    fill: #757575;
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.17;
+    padding-left: 0%;
+    margin-left: 345px;
+    width: 321px;
+    list-style: none;
 
-    &:hover,
-    &:focus {
-      color: var(--brand-color);
+    &__mail {
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.02em;
       text-decoration: none;
-      fill: var(--color2, #2196f3);
-    }
-  }
-  &__phone {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: #757575;
-    display: flex;
-    fill: #757575;
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      color: #757575;
+      display: flex;
+      fill: #757575;
+      transition-property: color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-      color: var(--brand-color);
-      text-decoration: none;
-      fill: var(--color2, #2196f3);
+      &:hover,
+      &:focus {
+        color: var(--brand-color);
+        text-decoration: none;
+        fill: var(--color2, #2196f3);
+      }
     }
-  }
-  & li:first-child {
-    margin-right: 30px;
+    &__phone {
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: #757575;
+      display: flex;
+      fill: #757575;
+      transition-property: color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: var(--brand-color);
+        text-decoration: none;
+        fill: var(--color2, #2196f3);
+      }
+    }
+    & li:first-child {
+      margin-right: 30px;
+    }
   }
 }
 .envelope {
