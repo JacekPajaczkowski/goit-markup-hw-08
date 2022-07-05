@@ -1,6 +1,7 @@
 .clients {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  flex-basis: auto;
   list-style: none;
 
   &__client-icon {
@@ -21,5 +22,18 @@
       fill: #2196f3;
       border: 1px solid #2196f3;
     }
+  }
+}
+@media screen and(min-width: 480px) and (max-width: 768px) {
+  .clients {
+    display: flex;
+    flex-basis: auto;
+  }
+}
+@media screen and(min-width: 768px) {
+  .clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
