@@ -999,6 +999,21 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
+.hamburger {
+  position: absolute;
+  top: 30px;
+  left: 400px;
+}
+
+.menu {
+  fill: black;
+}
+
+@media screen and (min-width: 480px) {
+  .hamburger {
+    display: none;
+  }
+}
 :root {
   --white: #fff;
   --brand-color: #2196f3;
