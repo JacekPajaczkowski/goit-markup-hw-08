@@ -315,6 +315,9 @@ p {
   color: var(--black);
   margin-bottom: 10px;
 }
+.description__svg {
+  width: 100%;
+}
 .description li {
   flex: 0 0 100%;
   max-width: 100%;

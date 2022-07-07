@@ -16,6 +16,9 @@
     color: var(--black);
     margin-bottom: 10px;
   }
+  &__svg{
+    width: 100%;
+  }
   & li {
     flex: 0 0 100%;
     max-width: 100%;
