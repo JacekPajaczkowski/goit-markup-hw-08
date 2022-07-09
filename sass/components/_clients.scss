@@ -1,9 +1,8 @@
 .clients {
   display: flex;
-  flex-direction: column;
   flex-basis: auto;
   list-style: none;
-
+  flex-wrap: wrap;
   &__client-icon {
     width: 170px;
     height: 92px;
@@ -23,7 +22,14 @@
       border: 1px solid #2196f3;
     }
   }
+  & > li {
+    flex: 0 0 50%;
+    min-width: 50%;
+    padding: 15px;
+    width: 100%;
+  }
 }
+
 @media screen and(min-width: 480px) and (max-width: 768px) {
   .clients {
     display: flex;

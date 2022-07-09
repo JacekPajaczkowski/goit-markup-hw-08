@@ -13,6 +13,9 @@
 
   &__title {
     color: var(--brand-color);
+    &--color {
+      color: var(--white);
+    }
   }
   &:hover,
   &:focus {
@@ -22,10 +25,6 @@
     color: var(--brand-color);
     &:hover,
     &:focus {
-      color: var(--white);
-    }
-
-    &--color {
       color: var(--white);
     }
   }

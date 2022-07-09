@@ -13,16 +13,22 @@
   &__headline {
     font-weight: 700;
     line-height: 1.17;
+    text-align: center;
     color: var(--black);
     margin-bottom: 10px;
   }
   &__svg{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;    
   }
   & li {
     flex: 0 0 100%;
     max-width: 100%;
     text-decoration: none;
+    margin-bottom: 30px;
   }
 }
 @media screen and(min-width: 480px) and(max-width: 768px) {
