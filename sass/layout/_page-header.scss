@@ -7,10 +7,12 @@
   background: var(--white);
   border-bottom: 1px solid #ececec;
 }
-.hamburger {
+.menu-toggle {
   position: absolute;
   right: 23px;
   top: 30px;
+  border: none;
+  background: none;
 }
 .menu {
   fill: black;

@@ -44,9 +44,12 @@
         </li>
       </ul>
     </div>
-    <div class="hamburger"><svg class="menu" height="16" width="24">
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu" height="16" width="24">
               <use href="./images/icons.svg#menu"></use>
-            </svg></div>
+            </svg>
+</button>
+    
   </header>
   <main>
     <section class="">
@@ -327,6 +330,21 @@
       </div>
     </div>
   </footer>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu"><svg class="menu" height="16" width="24">
+              <use href="./images/icons.svg#menu-close"></use>
+            </svg>
+    </button>
+    <nav class="mobile-nav"><ul class="navigation__list">
+          <li>
+            <a class="navigation__link navigation__link--active" href="./index.html">Agencja</a>
+          </li>
+          <li>
+            <a class="navigation__link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="navigation__link" href="#">Kontact</a></li>
+        </ul></nav>
+  </div>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="close-btn" data-modal-close>X</button>
@@ -363,6 +381,8 @@
       </form>
     </div>
   </div>
+  <script defer src="./js/mobile-menu.js"></script>
+  <script src="js/body-scroll-lock.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

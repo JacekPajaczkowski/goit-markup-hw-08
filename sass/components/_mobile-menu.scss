@@ -1,0 +1,18 @@
+.mobile-menu {  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: $mobile-menu-bg-color;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: $transition;
+    
+    &.is-open {
+        transform: translateX(0);
+    }}
