@@ -30,13 +30,13 @@
   }
 }
 
-@media screen and(min-width: 480px) and (max-width: 768px) {
+@media screen and(min-width: 768px) {
   .clients {
     display: flex;
     flex-basis: auto;
   }
 }
-@media screen and(min-width: 768px) {
+@media screen and(min-width: 1200px) {
   .clients {
     display: flex;
     flex-direction: row;

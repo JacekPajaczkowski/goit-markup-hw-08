@@ -1,5 +1,5 @@
 .section1 {
-  height: 400px;
+  min-height: 400px;
   display: flex;
   max-width: 100%;
   flex-direction: column;
@@ -13,9 +13,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and(min-width: 480px) and(max-width: 768px) {
+@media screen and(min-width: 768px) {
   .section1 {
-    height: 400px;
+    min-height: 400px;
     max-width: 100%;
     background-image: linear-gradient(
         rgba(98, 100, 110, 0.4),
@@ -24,7 +24,7 @@
       url("../images/Background768x400.jpg");
   }
 }
-@media screen and(min-width: 768px) {
+@media screen and(min-width: 1200px) {
   .section1 {
     height: 600px;
     max-width: 100%;

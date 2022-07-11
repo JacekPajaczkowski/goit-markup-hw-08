@@ -291,13 +291,13 @@ p {
   width: 100%;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .clients {
     display: flex;
     flex-basis: auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .clients {
     display: flex;
     flex-direction: row;
@@ -336,7 +336,7 @@ p {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .description {
     list-style: none;
     text-align: left;
@@ -360,7 +360,7 @@ p {
     text-decoration: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .description {
     list-style: none;
     text-align: left;
@@ -845,8 +845,7 @@ p {
 }
 .team__figure--img {
   margin-bottom: 30px;
-  width: 450px;
-  height: 460px;
+  width: 100%;
 }
 .team__figcaption {
   display: flex;
@@ -874,6 +873,115 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: var(--white);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+.mobile-menu__list {
+  flex-grow: 1;
+  list-style: none;
+}
+.mobile-menu__list--margin-bottom {
+  margin-bottom: 64px;
+}
+.mobile-menu__item--margin-bottom:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-menu__link {
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--shadow);
+  text-decoration: none;
+  transition: color transform;
+}
+.mobile-menu__link:hover, .mobile-menu__link:active, .mobile-menu__link:focus {
+  color: var(--brand-color);
+}
+.mobile-menu__link--phone {
+  font-size: 34px;
+  line-height: 1.18;
+  color: var(--brand-color);
+}
+.mobile-menu__link--email {
+  font-size: 24px;
+  line-height: 1.17;
+  color: var(--shadow2);
+}
+.mobile-menu__link--current-page {
+  color: var(--brand-color);
+}
+.mobile-menu__btn-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  color: var(--brand-color);
+  transition: color transform;
+}
+.mobile-menu__btn-close:hover, .mobile-menu__btn-close:active, .mobile-menu__btn-close:focus {
+  color: var(--brand-color);
+}
+.mobile-menu__icon {
+  width: 19px;
+  height: 19px;
+  fill: currentColor;
+}
+.mobile-menu__contact {
+  flex-grow: 0;
+}
+.mobile-menu__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style-type: none;
+}
+.mobile-menu__social-link {
+  display: flex;
+  align-items: center;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--brand-color);
+}
+.mobile-menu__social-icon {
+  height: 22px;
+  width: 1px;
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
   }
 }
 .footer1 {
@@ -969,7 +1077,7 @@ p {
 }
 
 .section1 {
-  height: 400px;
+  min-height: 400px;
   display: flex;
   max-width: 100%;
   flex-direction: column;
@@ -980,14 +1088,14 @@ p {
   background-size: cover;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .section1 {
-    height: 400px;
+    min-height: 400px;
     max-width: 100%;
     background-image: linear-gradient(rgba(98, 100, 110, 0.4), rgba(98, 100, 110, 0.4)), url("../images/Background768x400.jpg");
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section1 {
     height: 600px;
     max-width: 100%;
@@ -1064,6 +1172,11 @@ p {
   background: none;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 .menu {
   fill: black;
 }
@@ -1071,7 +1184,7 @@ p {
   fill: var(--brand-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hamburger {
     display: none;
   }

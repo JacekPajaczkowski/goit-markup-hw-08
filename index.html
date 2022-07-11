@@ -130,7 +130,7 @@
         <ul class="container team">
           <li>
             <figure class="team__figure">
-              <img class="team__figure team__figure--img" src="images/img1.jpg" width="270" height="260" alt="John Doe" />
+              <img class="team__figure team__figure--img" src="images/img1.jpg" sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px" alt="John Doe" />
               <figcaption>
                 <span class="team__figcaption">John Doe</span>
                 <p class="team__figcaption team__figcaption--p">Product Designer</p>
@@ -157,7 +157,7 @@
           </li>
           <li>
             <figure class="team__figure">
-              <img class="team__figure team__figure--img" src="images/img2.jpg" width="270" height="260" alt="John Doe" />
+              <img class="team__figure team__figure--img" src="images/img2.jpg" sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px" alt="John Doe" />
               <figcaption>
                 <span class="team__figcaption">John Doe</span>
                 <p class="team__figcaption team__figcaption--p">Frontend Developer</p>
@@ -184,7 +184,7 @@
           </li>
           <li>
             <figure class="team__figure">
-              <img class="team__figure team__figure--img" src="images/img3.jpg" width="270" height="260" alt="John Doe" />
+              <img class="team__figure team__figure--img" src="images/img3.jpg" sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px" alt="John Doe" />
               <figcaption>
                 <span class="team__figcaption">John Doe</span>
                 <p class="team__figcaption team__figcaption--p">Marketing</p>
@@ -211,7 +211,7 @@
           </li>
           <li>
             <figure class="team__figure">
-              <img class="team__figure team__figure--img" src="images/img4.jpg" width="270" height="260" alt="John Doe" />
+              <img class="team__figure team__figure--img" src="images/img4.jpg" sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px" alt="John Doe" />
               <figcaption>
                 <span class="team__figcaption">John Doe</span>
                 <p class="team__figcaption team__figcaption--p">UI Designer</p>
@@ -330,20 +330,56 @@
       </div>
     </div>
   </footer>
-  <div class="menu-container js-menu-container" id="mobile-menu">
+  <div class="mobile-menu js-menu-container is-open" id="mobile-menu">
     <button class="menu-toggle js-close-menu"><svg class="menu" height="16" width="24">
               <use href="./images/icons.svg#menu-close"></use>
             </svg>
     </button>
-    <nav class="mobile-nav"><ul class="navigation__list">
+    <ul class="mobile-menu__list">
+        <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+          <a href="index.html" class="mobile-menu__link mobile-menu__link--current-page">Agencja</a>
+        </li>
+        <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+          <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+          <a href="" class="mobile-menu__link">Kontakt</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu__contact">
+        <ul class="mobile-menu__list mobile-menu__list--margin-bottom">
+          <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+            <a href="tel:+48111111111" class="mobile-menu__link mobile-menu__link--phone">+48 111 111 111</a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item--margin-bottom">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__link mobile-menu__link--email"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__social-list">
           <li>
-            <a class="navigation__link navigation__link--active" href="./index.html">Agencja</a>
+            <a href="#" class="mobile-menu__social-link">instagram</a>
           </li>
           <li>
-            <a class="navigation__link" href="./portfolio.html">Portfolio</a>
+            <svg class="mobile-menu__social-icon"><use href="images/icons.svg#icon-vertical-line"></use></svg>
           </li>
-          <li><a class="navigation__link" href="#">Kontact</a></li>
-        </ul></nav>
+          <li>
+            <a href="#" class="mobile-menu__social-link">twitter</a>
+          </li>
+          <li>
+            <svg class="mobile-menu__social-icon"><use href="images/icons.svg#icon-vertical-line"></use></svg>
+          </li>
+          <li>
+            <a href="#" class="mobile-menu__social-link">facebook</a>
+          </li>
+          <li>
+            <svg class="mobile-menu__social-icon"><use href="images/icons.svg#icon-vertical-line"></use></svg>
+          </li>
+          <li><a href="#" class="mobile-menu__social-link">linkedin</a></li>
+        </ul>
   </div>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
