@@ -79,10 +79,9 @@
             <li>
               <figure class="cards__figure">
                 <img
-                  class="img"
+                  class="cards__img"
                   src="images/img5.jpg"
-                  width="370"
-                  height="294"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                   alt="Laptop with open internet page"
                 />
                 <div class="cards__overlay">
@@ -106,7 +105,7 @@
             <li>
               <figure class="cards__figure">
                 <img
-                  class="img"
+                  class="cards__img"
                   src="images/img6.jpg"
                   width="370"
                   height="294"
@@ -133,7 +132,7 @@
             <li>
               <figure class="cards__figure">
                 <img
-                  class="img"
+                  class="cards__img"
                   src="images/img7.jpg"
                   width="370"
                   height="294"
@@ -160,7 +159,7 @@
             <li>
               <figure class="cards__figure">
                 <img
-                  class="img"
+                  class="cards__img"
                   src="images/img8.jpg"
                   width="370"
                   height="294"
@@ -187,7 +186,7 @@
             <li>
               <figure class="cards__figure">
                 <img
-                  class="img"
+                  class="cards__img"
                   src="images/img9.jpg"
                   width="370"
                   height="294"
@@ -214,7 +213,7 @@
             <li>
               <figure class="cards__figure">
                 <img
-                  class="img"
+                  class="cards__img"
                   src="images/img10.jpg"
                   width="370"
                   height="294"
@@ -241,7 +240,7 @@
             <li>
               <figure class="cards__figure">
                 <img
-                  class="img"
+                  class="cards__img"
                   src="images/img11.jpg"
                   width="370"
                   height="294"
@@ -268,7 +267,7 @@
             <li>
               <figure class="cards__figure">
                 <img
-                  class="img"
+                  class="cards__img"
                   src="images/img12.jpg"
                   width="370"
                   height="294"
@@ -295,6 +294,7 @@
             <li>
               <figure class="cards__figure">
                 <img
+                class="cards__img"
                   src="images/img13.jpg"
                   width="370"
                   height="294"
@@ -323,75 +323,64 @@
       </section>
     </main>
     <footer class="footer1">
-      <div class="container footer2">
-        <div>
-          <a class="logo-link logo-link--color" href="./index.html"
-            >Web<span class="logo-link__title logo-link__title--color"
-              >Studio</span
-            ></a
-          >
-          <div class="footer-adress">
-            <ul class="footer-adres-list">
-              <li>m. Warszawa, Al. Jerozolimskie 21</li>
+    <div class="container footer2">
+      <div class="footer2 footer2__big">
+        <a class="logo-link logo-link--color" href="./index.html">Web<span
+            class="logo-link__title logo-link__title--color">Studio</span></a>
+        <div class="footer-adress">
+          <ul class="footer-adres-list">
+            <li>m. Warszawa, Al. Jerozolimskie 21</li>
 
-              <li>
-                <a class="mail1" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
+            <li>
+              <a class="mail1" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
 
-              <li>
-                <a class="phone1" href="tel:+48111111111">+48 111 111 111</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-links">
-          <div>DOŁĄCZ DO NAS</div>
-          <div class="social-list">
-            <a class="social-list__link social-list__link--color" href="#"
-              ><svg class="social-list__icon" height="44" width="44">
-                <use href="./images/icons.svg#instagram"></use>
-              </svg>
-            </a>
-            <a class="social-list__link social-list__link--color" href="#"
-              ><svg class="social-list__icon" height="44" width="44">
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </a>
-            <a class="social-list__link social-list__link--color" href="#"
-              ><svg class="social-list__icon" height="44" width="44">
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </a>
-            <a class="social-list__link social-list__link--color" href="#"
-              ><svg class="social-list__icon" height="44" width="44">
-                <use href="./images/icons.svg#linkedin"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="newsletter">
-          ZAPISZ SIĘ DO NEWSLETTERA
-          <form class="newsletter-form" action="javascript:void(0);">
-            <input
-              class="newsletter-form__input"
-              id="email"
-              name="email"
-              placeholder="E-mail"
-              required
-            />
-            <button class="newsletter-form__button" type="submit">
-              <span class="newsletter-form__button-text">Zapisz się</span
-              ><svg class="newsletter-form__send" height="24" width="24">
-                <use href="./images/icons.svg#send"></use>
-              </svg>
-            </button>
-          </form>
+            <li>
+              <a class="phone1" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <div class="mobile-menu js-menu-container is-open" id="mobile-menu">
+      <div class="footer-links">
+        <div>DOŁĄCZ DO NAS</div>
+        <div class="social-list">
+          <a class="social-list__link social-list__link--color" href="#"><svg class="social-list__icon" height="44"
+              width="44">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+          <a class="social-list__link social-list__link--color" href="#"><svg class="social-list__icon" height="44"
+              width="44">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+          <a class="social-list__link social-list__link--color" href="#"><svg class="social-list__icon" height="44"
+              width="44">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+          <a class="social-list__link social-list__link--color" href="#"><svg class="social-list__icon" height="44"
+              width="44">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+      <div class="newsletter">
+        ZAPISZ SIĘ DO NEWSLETTERA
+        <form class="newsletter-form" action="javascript:void(0);">
+          <input class="newsletter-form__input" id="email" name="email" placeholder="E-mail" required />
+          <button class="newsletter-form__button" type="submit">
+            <span class="newsletter-form__button-text">Zapisz się</span><svg class="newsletter-form__send" height="24"
+              width="24">
+              <use href="./images/icons.svg#send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+  </footer>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu"><svg class="menu" height="16" width="24">
               <use href="./images/icons.svg#menu-close"></use>
             </svg>

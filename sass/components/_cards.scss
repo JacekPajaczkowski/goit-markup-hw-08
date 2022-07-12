@@ -3,11 +3,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
   padding-left: 0px;
   & li:nth-child(-n + 6) {
     margin-bottom: 30px;
   }
+  &__img {
+    display: block;
+    min-width: 100%;
+  }
   & li {
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
     transition-property: box-shadow, border-radius;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -19,6 +28,7 @@
     border-radius: 0px 0px 4px 4px;
   }
   &__figure {
+    width: 100%;
     background: #ffffff;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -30,9 +40,6 @@
   }
   &__figcaption {
     background: #ffffff;
-    border-bottom: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
     padding-top: 20px;
     z-index: 1002;
     position: relative;
@@ -46,7 +53,7 @@
     &--text {
       line-height: 1.87;
       margin-left: 24px;
-      margin-bottom: 20px;
+      padding-bottom: 20px;
     }
   }
   &__overlay {
@@ -83,4 +90,15 @@
 }
 .portfolio-section {
   display: flex;
+}
+@media screen  and (min-width: 768px){
+  .cards{
+    & li {
+      width: 100%;
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    &__img{
+      width: 100%;
+    }
+  }
 }

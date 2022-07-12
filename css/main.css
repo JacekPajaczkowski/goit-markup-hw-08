@@ -37,10 +37,6 @@ body {
     padding-top: 60px;
   }
 }
-.img {
-  display: block;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -152,6 +148,7 @@ p {
   margin-left: 124px;
 }
 .button__portfolio {
+  width: 100%;
   font-weight: 500;
   font-family: "Roboto";
   border-style: none;
@@ -177,25 +174,55 @@ p {
   list-style: none;
   text-align: center;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   padding-left: 0%;
   padding-bottom: 50px;
 }
+.section-buttons li {
+  flex-basis: calc((100% - 30px) / 3);
+}
 .section-buttons li:nth-child(1n+2) {
   margin-left: 8px;
+  margin-bottom: 15px;
+}
+.section-buttons li:nth-child(4) {
+  margin-left: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-buttons {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-left: 0%;
+    padding-bottom: 50px;
+  }
+  .section-buttons li:nth-child(1n+2) {
+    margin-left: 8px;
+  }
+}
 .cards {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
   padding-left: 0px;
 }
 .cards li:nth-child(-n+6) {
   margin-bottom: 30px;
 }
+.cards__img {
+  display: block;
+  min-width: 100%;
+}
 .cards li {
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
   transition-property: box-shadow, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -205,6 +232,7 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 .cards__figure {
+  width: 100%;
   background: #ffffff;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
@@ -216,9 +244,6 @@ p {
 }
 .cards__figcaption {
   background: #ffffff;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
   padding-top: 20px;
   z-index: 1002;
   position: relative;
@@ -233,7 +258,7 @@ p {
 .cards__figcaption--text {
   line-height: 1.87;
   margin-left: 24px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .cards__overlay {
   position: absolute;
@@ -269,6 +294,15 @@ p {
   display: flex;
 }
 
+@media screen and (min-width: 768px) {
+  .cards li {
+    width: 100%;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .cards__img {
+    width: 100%;
+  }
+}
 .clients {
   display: flex;
   flex-basis: auto;
@@ -1055,14 +1089,17 @@ p {
   display: flex;
 }
 
-@media screen and (min-widtch: 768px) {
+@media screen and (min-width: 768px) {
   .footer-links {
     display: flex;
-    flex-direction: column;
-    margin-left: 70px;
   }
   .footer2 {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer2__big {
+    flex-direction: column;
   }
   .footer-adres-list {
     list-style: none;

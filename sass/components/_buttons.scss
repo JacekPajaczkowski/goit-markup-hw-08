@@ -20,6 +20,7 @@
     margin-left: 124px;
   }
   &__portfolio {
+    width: 100%;
     font-weight: 500;
     font-family: "Roboto";
     border-style: none;
@@ -46,13 +47,33 @@
 }
 .section-buttons {
   list-style: none;
-
   text-align: center;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   padding-left: 0%;
   padding-bottom: 50px;
+  & li {
+    flex-basis: calc((100% - 30px) / 3);
+  }
   & li:nth-child(1n + 2) {
     margin-left: 8px;
+    margin-bottom: 15px;
+  }
+  & li:nth-child(4) {
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-buttons {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-left: 0%;
+    padding-bottom: 50px;
+    & li:nth-child(1n + 2) {
+      margin-left: 8px;
+    }
   }
 }
