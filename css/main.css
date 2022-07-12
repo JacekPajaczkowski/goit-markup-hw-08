@@ -298,6 +298,7 @@ p {
   .cards li {
     width: 100%;
     flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
   }
   .cards__img {
     width: 100%;

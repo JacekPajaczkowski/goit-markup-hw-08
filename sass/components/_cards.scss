@@ -91,13 +91,14 @@
 .portfolio-section {
   display: flex;
 }
-@media screen  and (min-width: 768px){
-  .cards{
+@media screen and (min-width: 768px) {
+  .cards {
     & li {
       width: 100%;
       flex-basis: calc((100% - 30px) / 2);
+      margin-bottom: 30px;
     }
-    &__img{
+    &__img {
       width: 100%;
     }
   }
