@@ -17,7 +17,8 @@
 @media screen and (min-width: 768px) {
   .header {
     display: flex;
-    flex-basis: auto;
+    flex-direction: row;
+    justify-content: space-between;
       }
   .menu-toggle {
     display: none;

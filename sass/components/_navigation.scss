@@ -32,7 +32,7 @@
         position: relative;
         border-top: 4px solid var(--brand-color);
         border-radius: 2px;
-        top: 31px;
+        top: 30px;
       }
       &:hover,
       &:focus {
@@ -50,14 +50,9 @@
           position: relative;
           border-top: 4px solid var(--brand-color);
           border-radius: 2px;
-          top: 31px;
+          top: 30px;
         }
       }
     }
-  }
-}
-@media screen and(min-width: 1200px) {
-  .navigation {
-    margin-left: 93px;
   }
 }
