@@ -57,6 +57,12 @@
   .team {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    & li {
+      max-width: 270px;
+      max-height: 428px;
+      flex-basis: auto;
+      text-decoration: none;
+    }
   }
 }

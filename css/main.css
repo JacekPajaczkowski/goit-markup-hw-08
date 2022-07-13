@@ -110,6 +110,7 @@ p {
   .adres-list {
     margin-left: 345px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     line-height: 1.17;
@@ -119,6 +120,12 @@ p {
   }
   .adres-list li:first-child {
     margin-right: 30px;
+  }
+  .adres-list__mail {
+    padding: 0;
+  }
+  .adres-list__phone {
+    padding: 0;
   }
 }
 .envelope {
@@ -349,6 +356,10 @@ p {
     flex-direction: row;
     justify-content: space-around;
   }
+  .clients > li {
+    min-width: 170px;
+    flex-basis: auto;
+  }
 }
 .description {
   list-style: none;
@@ -410,37 +421,11 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .description {
-    list-style: none;
-    text-align: left;
-    line-height: 1.71;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-left: 0%;
-    margin-top: 0px;
-  }
-  .description__headline {
-    font-weight: 700;
-    line-height: 1.17;
-    color: var(--black);
-    margin-bottom: 10px;
-  }
-  .description li {
-    flex: 0 0 25%;
-    max-width: 25%;
-    text-decoration: none;
-  }
-  .description li:nth-child(2n+0) {
-    margin-left: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .description {
+    align-items: center;
+    justify-content: space-between;
     list-style: none;
-    text-align: left;
     line-height: 1.71;
-    display: flex;
-    flex-wrap: nowrap;
     padding-left: 0%;
     margin-top: 0px;
     margin-bottom: 94px;
@@ -455,9 +440,8 @@ p {
     flex: 0 0 25%;
     max-width: 25%;
     text-decoration: none;
-  }
-  .description li:nth-child(1n+2) {
-    margin-left: 30px;
+    padding: 15px;
+    margin-bottom: 0;
   }
 }
 .logo-link {
@@ -814,10 +798,25 @@ p {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    align-items: flex-start;
+    margin-left: 78px;
+    margin-top: 50px;
+  }
+  .newsletter-form {
+    flex-direction: row;
+    align-items: center;
+  }
+  .newsletter-form__button {
+    margin: 0;
+    margin-left: 12px;
+  }
+}
 .product {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 0%;
   margin-top: 50px;
 }
@@ -849,6 +848,7 @@ p {
 @media screen and (min-width: 1200px) {
   .products {
     display: block;
+    justify-content: space-between;
   }
 }
 .social-list {
@@ -947,7 +947,13 @@ p {
   .team {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .team li {
+    max-width: 270px;
+    max-height: 428px;
+    flex-basis: auto;
+    text-decoration: none;
   }
 }
 .mobile-menu {
@@ -1157,6 +1163,35 @@ p {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer1 {
+    flex-direction: row;
+  }
+  .footer2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer2__big {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 70px;
+  }
+  .footer-links {
+    align-items: flex-start;
+  }
+  .footer-adress {
+    min-width: 246px;
+  }
+  .footer-adres-list {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer-adres-list li {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
 .section1 {
   min-height: 400px;
   display: flex;
@@ -1265,11 +1300,6 @@ p {
   fill: var(--brand-color);
 }
 
-@media screen and (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-}
 :root {
   --white: #fff;
   --brand-color: #2196f3;

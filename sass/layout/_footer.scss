@@ -94,3 +94,32 @@
     text-decoration: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer1 {
+    flex-direction: row;
+  }
+  .footer2 {
+    display: flex;
+    justify-content: flex-start;
+    &__big {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 70px;
+    }
+  }
+  .footer-links {
+    align-items: flex-start;
+      }
+  .footer-adress{
+    min-width: 246px;
+  }
+  .footer-adres-list {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    & li {
+      justify-content: flex-start;
+    align-items: flex-start;
+    }
+  }
+}
