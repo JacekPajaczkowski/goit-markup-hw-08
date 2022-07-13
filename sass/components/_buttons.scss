@@ -77,3 +77,19 @@
     }
   }
 }
+@media screen and (min-width: 1200px) {
+  .section-buttons {
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-left: 0%;
+    padding-bottom: 50px;
+    & li:nth-child(1n + 2) {
+      margin-left: 8px;
+    }
+    & li {
+      flex-basis: calc((100% - 314px) / 6);
+    }
+  }
+}

@@ -2,14 +2,14 @@
   display: none;
 }
 @media screen and(min-width: 768px) {
-  .adres-list {
+    .adres-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 93px;
+    margin-left: 83px;
     line-height: 1.17;
     padding-left: 0%;
 
-    width: 321px;
+    width: 100%;
     list-style: none;
 
     &__mail {

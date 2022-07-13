@@ -2,7 +2,7 @@
   font-family: "Raleway";
 
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--black);
@@ -27,5 +27,10 @@
     &:focus {
       color: var(--white);
     }
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo-link{
+    font-size: 26px;
   }
 }
