@@ -149,7 +149,7 @@ p {
   margin-top: 30px;
 }
 .button--modal {
-  margin-left: 124px;
+  margin-left: 125px;
 }
 .button__portfolio {
   width: 100%;
@@ -221,6 +221,9 @@ p {
   }
   .section-buttons li {
     flex-basis: calc((100% - 314px) / 6);
+  }
+  .button--modal {
+    margin-left: 164px;
   }
 }
 .cards {
@@ -434,12 +437,17 @@ p {
     line-height: 1.17;
     color: var(--black);
     margin-bottom: 10px;
+    text-align: left;
   }
   .description li {
     flex: 0 0 50%;
     max-width: 50%;
     text-decoration: none;
     padding: 15px;
+    margin-bottom: 0px;
+  }
+  .description li:nth-child(n+3) {
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -503,7 +511,7 @@ p {
 .modal-form {
   display: flex;
   flex-direction: column;
-  width: 448px;
+  width: 450px;
   margin: auto;
   font-size: 20px;
   font-weight: 700;
@@ -519,12 +527,15 @@ p {
   fill: var(--brand-color);
 }
 .modal-form__label {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
   font-size: 12px;
   font-weight: 400;
 }
 .modal-form__input {
   height: 40px;
-  width: 448px;
+  width: 370px;
   margin-top: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
@@ -542,20 +553,20 @@ p {
 
 .name {
   position: absolute;
-  top: 107px;
-  left: 15px;
+  top: 106px;
+  left: 52px;
 }
 
 .telefon {
   position: absolute;
   top: 174.26px;
-  left: 14.27px;
+  left: 52px;
 }
 
 .modal-email {
   position: absolute;
   top: 243px;
-  left: 13.5px;
+  left: 52px;
 }
 
 .input1:checked + .label2::before {
@@ -579,11 +590,11 @@ p {
 
 .label2 {
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   color: #757575;
   margin-top: 20px;
-  margin-left: 15px;
+  justify-content: center;
   cursor: pointer;
 }
 .label2::before {
@@ -603,6 +614,8 @@ p {
   margin-top: 4px;
   font-size: 12px;
   height: 120px;
+  width: 370px;
+  margin-left: 42px;
   resize: none;
   padding-top: 1rem;
   padding-left: 1rem;
@@ -617,6 +630,22 @@ p {
   outline: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    width: 528px;
+  }
+  .modal-form__input {
+    width: 448px;
+  }
+  .textarea {
+    width: 448px;
+    margin-left: 40px;
+  }
+  .label2 {
+    justify-content: center;
+    font-size: 14px;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -649,7 +678,8 @@ p {
 .x {
   width: 30px;
   height: 30px;
-  position: absolute;
+  position: relative;
+  left: 412px;
   top: 8px;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -672,16 +702,6 @@ p {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 768px) {
-  .modal {
-    position: absolute;
-    width: 450px;
-    min-height: 609px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
 @media screen and (min-width: 1200px) {
   .modal {
     position: absolute;
@@ -689,6 +709,10 @@ p {
     min-height: 581px;
     left: 50%;
     top: 50%;
+  }
+  .close-btn,
+.x {
+    left: 490px;
   }
 }
 .is-hidden .modal {
@@ -930,9 +954,11 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team li:last-child {
+  margin-bottom: 0;
+}
 .team__figure {
   margin: 0 0 0 0;
-  margin-bottom: 30px;
 }
 .team__figure--img {
   margin-bottom: 30px;
@@ -963,6 +989,9 @@ p {
   .team li {
     flex-basis: calc((100% - 30px) / 2);
     text-decoration: none;
+  }
+  .team li:nth-child(n+3) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {

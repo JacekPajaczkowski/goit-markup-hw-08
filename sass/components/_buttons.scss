@@ -17,7 +17,7 @@
   width: 200px;
   margin-top: 30px;
   &--modal {
-    margin-left: 124px;
+    margin-left: 125px;
   }
   &__portfolio {
     width: 100%;
@@ -91,5 +91,8 @@
     & li {
       flex-basis: calc((100% - 314px) / 6);
     }
+  }
+  .button--modal {
+    margin-left: 164px;
   }
 }
