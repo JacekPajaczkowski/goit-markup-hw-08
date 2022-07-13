@@ -9,9 +9,10 @@
       rgba(98, 100, 110, 0.4),
       rgba(98, 100, 110, 0.4)
     ),
-    url("../images/Background480x400.jpg");
+    url("../images/bg-mobile-@1x-480x400.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 @media screen and(min-width: 768px) {
   .section1 {
@@ -21,7 +22,7 @@
         rgba(98, 100, 110, 0.4),
         rgba(98, 100, 110, 0.4)
       ),
-      url("../images/Background768x400.jpg");
+      url("../images/bg-tablet-@1x-768x400.jpg");
   }
 }
 @media screen and(min-width: 1200px) {
@@ -32,7 +33,7 @@
         rgba(98, 100, 110, 0.4),
         rgba(98, 100, 110, 0.4)
       ),
-      url("../images/Background1600x600.jpg");
+      url("../images/bg-desktop-@1x-1600x600.jpg");
   }
 }
 .headline1 {
